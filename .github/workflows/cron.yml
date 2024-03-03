@@ -2,16 +2,11 @@ name: Run Python Bot
 
 on:
   schedule:
-    - cron: '50 10 * * *'
-
-permissions:
-  contents: read
+    - cron: '5 11 * * *'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v3
     - name: Set up Python 3.10
