@@ -1,6 +1,7 @@
 name: Run Python Bot
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '5 11 * * *'
 
