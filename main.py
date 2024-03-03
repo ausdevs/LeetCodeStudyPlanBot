@@ -1,8 +1,11 @@
 from datetime import datetime
+from dotenv import load_dotenv
 from os import environ
 
 import discord
 import json
+
+load_dotenv()
 
 token = environ["DISCORD_TOKEN"]
 channel_id = int(environ["DISCORD_CHANNEL_ID"])
